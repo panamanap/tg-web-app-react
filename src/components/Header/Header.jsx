@@ -1,7 +1,8 @@
 import React from 'react';
+import { Button } from '../Button/Button.jsx';
 import { useTelegram } from '../../hooks/useTelegram';
 
-const Header = () => {
+export const Header = () => {
     const {user, onClose} = useTelegram();
     
     return (
@@ -13,5 +14,3 @@ const Header = () => {
         </div>
     );
 };
-
-export default Header;
